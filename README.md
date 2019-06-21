@@ -31,8 +31,7 @@ The goal of this Capstone project is to deploy a web application built from a pr
    * ```ssh-keygen```. We use the generated public key to configure over the server so that Grader can log into the server. 
    * Copy the public key.
    * SSH into the Server as Ubuntu user. Then, cd /home/grader to the grader's home directory.
-   * Create a new directory called .ssh using ```sudo mkdir .ssh``` and change its ownership to grader: ```sudo chown grader:grader  .ssh/
-```
+   * Create a new directory called .ssh using ```sudo mkdir .ssh``` and change its ownership to grader: ```sudo chown grader:grader  .ssh/ ```
 
 
 
