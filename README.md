@@ -10,6 +10,11 @@ The goal of this Capstone project is to deploy a web application built from a pr
 * It is a good practice to update&upgrade all softwares in order to keep the system secure. 
     * ```sudo apt-get update```
     * ```sudo apt-get upgrade```
+    
+* Firewall Configuration:
+   * Step 1: 
+   * Step 2:
+   * Step 3: 
 
 
 
