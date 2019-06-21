@@ -40,6 +40,17 @@ The goal of this Capstone project is to deploy a web application built from a pr
    
 * Log into the Server as User: grader
    * Now that the server has the public key generated for grader. All we need to do to log in as grader is to use the private key generated. Use this command -- ```ssh grader@54.218.238.1 -i graderKey -p 2200```. The logic here is that the private key can be paired up with the public key that exists in the server for user Grader. This is the verification process for user:grader to log in.
+   * Configure the UTC time zone as the user:grader by ```sudo dpkg-reconfigure tzdata```. You need to choose the appropriate time zone from the options.
+
+* Install and configure Apache to serve a Python mod_wsgi application
+   * ```sudo apt-get install apache2``` to install Apache2.
+   * ```sudo apt-get install libapache2-mod-wsgi-py3``` to install Python 3 mod_wsgi package. My webapp is written in Python3. Note, this command automatically enables wsgi.
+   
+
+* Install and configure PostgreSQL
+  * Similarly, we install PostgreSQL database server by  ``` sudo apt-get install postgresql```.
+   
+
 
 
 
