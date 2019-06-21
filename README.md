@@ -22,8 +22,17 @@ The goal of this Capstone project is to deploy a web application built from a pr
    
  * Add a new user - grader, and grant it access.
    * ```sudo adduser grader``` (Create an account for a new user named grader)
-   * Next, we want to grant the grader the ability as if it were a superuser. Technically speaking, this is called "granting grader a sudo permission". We use the command ```
    * (_optional_) ```sudo apt install finger``` and ```finger grader``` to confirm if the new user and its information are correctly updated.
+   * Next, we want to grant the grader the ability as if it were a superuser. Technically speaking, this is called "granting grader a sudo permission or root priviledges". We use the command ```sudo ls /etc/sudoers.d```. This lets you see the current users who have sudo priviledges. 
+   * ```sudo visudo``` and add ```grader  ALL=(ALL:ALL) ALL``` below the existing line -- ```root  ALL=(ALL:ALL) ALL```
+   
+   * ```exit``` to get back to the local terminal.
+   * Now, we need a Public/Private keypair in order for grader user to log into the Server.
+   * ```ssh-keygen```. We use the generated public key to configure over the server so that Grader can log into the server. 
+   * Copy the public key.
+   * SSH into the Server as Ubuntu user. Then, cd /home/grader to the grader's home directory.
+   * Create a new directory called .ssh using ```sudo mkdir .ssh``` and change its ownership to grader: ```sudo chown grader:grader  .ssh/
+```
 
 
 
@@ -31,3 +40,4 @@ The goal of this Capstone project is to deploy a web application built from a pr
 ## References
 
 * [SSH port](https://www.unixtutorial.org/ssh-port)
+* [grant user sudo priviledges](https://github.com/boisalai/udacity-linux-server-configuration)
