@@ -29,9 +29,17 @@ The goal of this Capstone project is to deploy a web application built from a pr
    * ```exit``` to get back to the local terminal.
    * Now, we need a Public/Private keypair in order for grader user to log into the Server.
    * ```ssh-keygen```. We use the generated public key to configure over the server so that Grader can log into the server. 
-   * Copy the public key.
+   * ("Key" Step )Copy the public key.
    * SSH into the Server as Ubuntu user. Then, cd /home/grader to the grader's home directory.
    * Create a new directory called .ssh using ```sudo mkdir .ssh``` and change its ownership to grader: ```sudo chown grader:grader  .ssh/ ```
+   * ```cd into /home/grader/.ssh folder. Then, paste the public key from (Key Step) above into a new file named 'authorized_keys'. I.e.,
+   Use this command - ```sudo nano authorized_keys```, then just paste that public key in it. Save and exit.
+   * Type ```cat authorized_keys``` to see if the public key is successfully pasted in it.
+   * Exit. Now, you should be at your local terminal.
+   
+   
+* Log into the Server as User: grader
+   * Now that the server has the public key generated for grader. All we need to do to log in as grader is to use the private key generated. Use this command -- ```ssh grader@54.218.238.1 -i graderKey -p 2200```. The logic here is that the private key can be paired up with the public key that exists in the server for user Grader. This is the verification process for user:grader to log in.
 
 
 
