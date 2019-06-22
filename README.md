@@ -49,13 +49,13 @@ The goal of this Capstone project is to deploy a web application built from a pr
 
 * Install and configure PostgreSQL
   * Similarly, we install PostgreSQL database server by  ``` sudo apt-get install postgresql```.
-  * Log in as Postgres user to create `catalog` database by -- ```sudo -u postgres psql```. (Type in the password if you have created one earlier on)
-  * Create a PostgreSQL role and grant it ability to create Database. 
-   * ```CREATE ROLE catalog WITH LOGIN PASSWORD 'catalog1';``` 
-   * ```ALTER ROLE catalog CREATEDB;```
-   * Exit to the local terminal and SSH into Ubuntu user (This is because we want to create a new Linux user).
-   * In a very similar fashion as how we have created the new user grader, we now create another new Linux user named catalog and grant it the sudo priviledges. 
+  * Log in as Postgres user to create `itemcatalog` database by -- ```CREATE DATABASE itemcatalog```.
+  * Create a PostgreSQL role and grant it ability to full permission 
+   * ```CREATE ROLE ubuntu WITH LOGIN PASSWORD 'A_PASSWORD_OF_YOUR_CHOICE';``` 
+   * ```grant all privileges on database itemcatalog to ubuntu;``` 
    * Exit to your local terminal.
+   * SSH into the server as grader. 
+   (To Be Continued)
 
 * Clone The Webapp from your Github Repository into a folder /var/www/catalog (create it when logged in as grader user).
    * While logged in as a grader user, cd into /var/www/catalog. Then type the Command: ``` sudo git clone https://github.com/WhiskersReneeWe/Item-Catalog.git ./```. This will copy the webapp from your personal Github repo to the Grader account.
