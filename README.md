@@ -60,6 +60,7 @@ The goal of this Capstone project is to deploy a web application built from a pr
 * Clone The Webapp from your Github Repository into a folder /var/www/catalog (create it when logged in as grader user).
    * While logged in as a grader user, cd into /var/www/catalog. Then type the Command: ``` sudo git clone https://github.com/WhiskersReneeWe/Item-Catalog.git ./```. This will copy the webapp from your personal Github repo to the Grader account.
    * change the ownership of /var/www/catalog to the grader user: ``` sudo chown -R grader:grader catalog/```
+   * ```sudo nano yourdatabase.py``` to edit one line with  ```engine = create_engine('postgresql://catalog:PASSWORD@localhost/catalog')```
 
    
 
