@@ -57,6 +57,9 @@ The goal of this Capstone project is to deploy a web application built from a pr
    * While logged in as a grader user, cd into /var/www/catalog. Then type the Command: ``` sudo git clone https://github.com/WhiskersReneeWe/Item-Catalog.git ./```. This will copy the webapp from your personal Github repo to the Grader account.
    * ```sudo nano yourdatabase.py``` to edit one line with  ```engine = create_engine('postgresql://ubuntu:PASSWOR_OF_YOUR_CHOICE@localhost/itemcatalog')```
    * ```sudo python db_setup.py```
+   * Very similarly, * ```sudo nano yourdatabase_initialdata.py``` to edit one line with  ```engine = create_engine('postgresql://ubuntu:PASSWOR_OF_YOUR_CHOICE@localhost/itemcatalog')```
+   * ```sudo python db_initialdata.py```
+   * Now, you should have populated the newly created database.
    * Exit to your local terminal.
    * SSH into the server as grader. 
    (To Be Continued)
