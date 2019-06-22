@@ -49,6 +49,17 @@ The goal of this Capstone project is to deploy a web application built from a pr
 
 * Install and configure PostgreSQL
   * Similarly, we install PostgreSQL database server by  ``` sudo apt-get install postgresql```.
+  * Log in as Postgres user to create `catalog` database by -- ```sudo -u postgres psql```. (Type in the password if you have created one earlier on)
+  * Create a PostgreSQL role and grant it ability to create Database. 
+   * ```CREATE ROLE catalog WITH LOGIN PASSWORD 'catalog1';``` 
+   * ```ALTER ROLE catalog CREATEDB;```
+   * Exit to the local terminal and SSH into Ubuntu user (This is because we want to create a new Linux user).
+   * In a very similar fashion as how we have created the new user grader, we now create another new Linux user named catalog and grant it the sudo priviledges. 
+   * Exit to your local terminal.
+
+* Clone The Webapp from your Github Repository into a folder /var/www/catalog (create it when logged in as grader user). Command:
+``````
+
    
 
 
