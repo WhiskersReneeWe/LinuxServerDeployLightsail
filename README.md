@@ -57,8 +57,8 @@ The goal of this Capstone project is to deploy a web application built from a pr
    * In a very similar fashion as how we have created the new user grader, we now create another new Linux user named catalog and grant it the sudo priviledges. 
    * Exit to your local terminal.
 
-* Clone The Webapp from your Github Repository into a folder /var/www/catalog (create it when logged in as grader user). Command:
-``````
+* Clone The Webapp from your Github Repository into a folder /var/www/catalog (create it when logged in as grader user).
+* While logged in as a grader user, cd into /var/www/catalog. Then type the Command: ``` sudo git clone https://github.com/WhiskersReneeWe/Item-Catalog.git ./```. This will copy the webapp from your personal Github repo to the Grader account.
 
    
 
