@@ -3,6 +3,12 @@
 ## Udacity Fullstack Nanodegree Final Project
 The goal of this Capstone project is to deploy a web application built from a previous project to a publicly accessible Ubuntu linux server. I use AWS Lightsail instance as the Virtual linux server and Ubuntu as its operating system for this project. 
 
+## Project Summary
+ Username: grader
+ SSH port: 2200
+ IP address: 54.218.238.1
+ 
+ 
 ## Project Detail
 
 * Public IP Address: 54.218.238.1
