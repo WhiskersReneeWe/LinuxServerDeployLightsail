@@ -62,8 +62,14 @@ The goal of this Capstone project is to deploy a web application built from a pr
    * Now, you should have populated the newly created database.
    * Exit to your local terminal.
    * SSH into the server as grader. 
-   (To Be Continued)
-
+   
+   
+ * Get the Webapp ready
+   * Log into the server as Ubuntu user.
+   * ``sudo nano yourwebapp.py``` to edit one line with  ```engine = create_engine('postgresql://ubuntu:PASSWOR_OF_YOUR_CHOICE@localhost/itemcatalog')```
+   * Change the path to client_secret.json accordingly.
+   * Copy everything into path -- /var/www/html
+   * Create a wsgi file.
 
    
 
