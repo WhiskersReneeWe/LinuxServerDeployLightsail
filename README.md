@@ -70,6 +70,13 @@ The goal of this Capstone project is to deploy a web application built from a pr
    * Change the path to client_secret.json accordingly.
    * Copy everything into path -- /var/www/html
    * Create a wsgi file.
+      
+      *  ```
+       import sys
+       sys.path.append("/var/www/html")
+       from app import app as application
+       application.secret_key = 'supersecretkey'
+       ```
 
    
 
