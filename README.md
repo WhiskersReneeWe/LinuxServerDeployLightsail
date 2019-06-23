@@ -67,18 +67,20 @@ The goal of this Capstone project is to deploy a web application built from a pr
  * Get the Webapp ready
    * Log into the server as Ubuntu user.
    * ``sudo nano yourwebapp.py``` to edit one line with  ```engine = create_engine('postgresql://ubuntu:PASSWOR_OF_YOUR_CHOICE@localhost/itemcatalog')```
+   * Edit the gconnect() endpoint where 
+       ```oauth_flow = flow_from_clientsecrets('/var/www/html/client_secret.json', scope='') ```
    * Change the path to client_secret.json accordingly.
    * Copy everything into path -- /var/www/html
-   * Create a wsgi file.
+   * Create a wsgi file. I named this file myapp.wsgi
       
-      *  ```
+      ```
        import sys
        sys.path.append("/var/www/html")
        from app import app as application
        application.secret_key = 'supersecretkey'
        ```
 
-   
+    * 
 
 
 
