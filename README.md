@@ -66,21 +66,32 @@ The goal of this Capstone project is to deploy a web application built from a pr
    
  * Get the Webapp ready
    * Log into the server as Ubuntu user.
-   * ``sudo nano yourwebapp.py``` to edit one line with  ```engine = create_engine('postgresql://ubuntu:PASSWOR_OF_YOUR_CHOICE@localhost/itemcatalog')```
+   * ```sudo nano yourwebapp.py``` to edit one line with  ```engine = create_engine('postgresql://ubuntu:PASSWOR_OF_YOUR_CHOICE@localhost/itemcatalog')```
    * Edit the gconnect() endpoint where 
        ```oauth_flow = flow_from_clientsecrets('/var/www/html/client_secret.json', scope='') ```
    * Change the path to client_secret.json accordingly.
    * Copy everything into path -- /var/www/html
    * Create a wsgi file. I named this file myapp.wsgi
       
-      ```
-       import sys
+      ```import sys
        sys.path.append("/var/www/html")
        from app import app as application
        application.secret_key = 'supersecretkey'
        ```
+   * Update all necessary packages (I used pip3):
+     ```sudo pip3 install flask 
+        sudo pip3 install packaging 
+        sudo pip3 install oauth2client 
+        sudo pip3 install flask-httpauth
+        sudo pip3 install sqlalchemy 
+        sudo pip3 install flask-sqlalchemy 
+        sudo pip3 install requests
+        sudo pip3 install psycopg2
+      ```
 
-    * 
+* Go to: http://54.218.238.1.xip.io/ to check out the app.
+
+  
 
 
 
