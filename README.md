@@ -1,6 +1,6 @@
 # Linux Server Configuration and Web Application Deployment
 
-## Udacity Fullstack Nanodegree Final Project
+## Udacity Fullstack Nanodegree Capstone Project
 The goal of this Capstone project is to deploy a web application built from a previous project to a publicly accessible Ubuntu linux server. I use AWS Lightsail instance as the Virtual linux server and Ubuntu as its operating system for this project. 
 
 ## Project Summary
