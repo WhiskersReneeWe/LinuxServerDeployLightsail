@@ -96,7 +96,7 @@ The goal of this Capstone project is to deploy a web application built from a pr
         sudo pip3 install psycopg2
       ```
 
-* Go to: http://54.218.238.1.xip.io/ to check out the app.
+* Go to: http://54.218.238.1.xip.io/ to check out the app. (I have removed my Server from AWS since I finished this project, but if you want to see it alive let me know!)
 
   
 
