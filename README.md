@@ -109,3 +109,4 @@ The goal of this Capstone project is to deploy a web application built from a pr
 * [SSH port](https://www.unixtutorial.org/ssh-port)
 * [Awesome SSH Daemon Tutorial](https://www.digitalocean.com/community/tutorials/how-to-tune-your-ssh-daemon-configuration-on-a-linux-vps)
 * [grant user sudo priviledges](https://github.com/boisalai/udacity-linux-server-configuration)
+* [Configure a Firewall -- Tutorial](https://www.linode.com/docs/security/firewalls/configure-firewall-with-ufw/)
