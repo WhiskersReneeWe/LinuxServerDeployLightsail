@@ -16,6 +16,7 @@ The goal of this Capstone project is to deploy a web application built from a pr
 * It is a good practice to update&upgrade all softwares in order to keep the system secure. 
     * ```sudo apt-get update```
     * ```sudo apt-get upgrade```
+    * ```sudo apt-get dist-upgrade``` (if some packages are kept back)
     
 * Configure the Firewall to support our applications and ports needed for this project:
    * Step 0: First and foremost, ```sudo ufw allow 2200/tcp``` and create custom port on Lightsail instance.
@@ -106,4 +107,5 @@ The goal of this Capstone project is to deploy a web application built from a pr
 ## References
 
 * [SSH port](https://www.unixtutorial.org/ssh-port)
+* [Awesome SSH Daemon Tutorial](https://www.digitalocean.com/community/tutorials/how-to-tune-your-ssh-daemon-configuration-on-a-linux-vps)
 * [grant user sudo priviledges](https://github.com/boisalai/udacity-linux-server-configuration)
