@@ -38,7 +38,7 @@ The goal of this Capstone project is to deploy a web application built from a pr
    * ("Key" Step )Copy the public key.
    * SSH into the Server as Ubuntu user. Then, cd /home/grader to the grader's home directory.
    * Create a new directory called .ssh using ```sudo mkdir .ssh``` and change its ownership to grader: ```sudo chown grader:grader  .ssh/ ```
-   * ```cd into /home/grader/.ssh folder. Then, paste the public key from (Key Step) above into a new file named 'authorized_keys'. I.e.,
+   * cd into /home/grader/.ssh folder. Then, paste the public key from (Key Step) above into a new file named 'authorized_keys'. I.e.,
    Use this command - ```sudo nano authorized_keys```, then just paste that public key in it. Save and exit.
    * Type ```cat authorized_keys``` to see if the public key is successfully pasted in it.
    * Exit. Now, you should be at your local terminal.
